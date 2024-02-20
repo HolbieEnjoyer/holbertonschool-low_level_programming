@@ -1,6 +1,4 @@
 #include "main.h"
-#include <limits.h>
-#include <stdio.h>
 
 /**
 *print_last_digit - Fuck Betty
@@ -9,17 +7,12 @@
 */
 int print_last_digit(int n)
 {
-if (n == INT_MIN)
-{
-_putchar('0' + 8);
-return (8);
-}
 
 int abs;
 int d;
 
-abs = n < 0 ? n * -1 : n;
-d = abs % 10;
+d = n % 10;
+abs = d < 0 ? d * -1 : d;
 _putchar('0' + d);
 return (d);
 }

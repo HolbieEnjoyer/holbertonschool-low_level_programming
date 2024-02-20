@@ -34,8 +34,11 @@ void print_num(int t)
 if (t < 0)
 	_putchar('-');
 t = abs(t);
-int num = t;
-int dec = 1;
+int num;
+int dec;
+
+num = t;
+dec = 1;
 
 while (num > 10)
 {
@@ -45,10 +48,10 @@ num /= 10;
 
 while (dec != 1)
 {
-_putchar('0'+(t/dec) % 10);
+_putchar('0' + (t / dec) % 10);
 dec /= 10;
 }
-_putchar('0'+t%10);
+_putchar('0' + t % 10);
 }
 
 /**

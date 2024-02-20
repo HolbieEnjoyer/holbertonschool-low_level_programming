@@ -41,7 +41,7 @@ t = abs(t);
 num = t;
 dec = 1;
 
-while (num > 10)
+while (num >= 10)
 {
 dec *= 10;
 num /= 10;

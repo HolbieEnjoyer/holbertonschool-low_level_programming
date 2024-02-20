@@ -36,7 +36,7 @@ _putchar(' ');
 if (num < 10)
 {
 _putchar(' ');
-if ((i + 1) * j < 10)
+if ((i + 1) * j < 10 && (i + 2) * j > 10)
 	_putchar(' ');
 }
 }

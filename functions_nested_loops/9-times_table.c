@@ -29,7 +29,8 @@ int num;
 
 num = i * j;
 print_num(num);
-_putchar(',');
+if (i < 9)
+	_putchar(',');
 _putchar(' ');
 if (num < 10)
 	_putchar(' ');

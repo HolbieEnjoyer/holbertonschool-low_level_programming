@@ -24,6 +24,8 @@ int i;
 for (i = n; i < 99; i++)
 {
 print_num(n);
+if (i == 98)
+	continue;
 _putchar(',');
 _putchar(' ');
 }

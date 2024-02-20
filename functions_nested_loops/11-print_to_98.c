@@ -31,11 +31,12 @@ return n < 0 ? n * -1 : n;
 */
 void print_num(int t)
 {
+int num;
+int dec;
+
 if (t < 0)
 	_putchar('-');
 t = abs(t);
-int num;
-int dec;
 
 num = t;
 dec = 1;

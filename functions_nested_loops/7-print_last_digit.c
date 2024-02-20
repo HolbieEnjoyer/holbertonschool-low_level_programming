@@ -13,6 +13,6 @@ int d;
 
 d = n % 10;
 abs = d < 0 ? d * -1 : d;
-_putchar('0' + d);
-return (d);
+_putchar('0' + abs);
+return (abs);
 }

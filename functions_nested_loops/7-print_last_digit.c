@@ -1,5 +1,6 @@
 #include "main.h"
-#include "limits.h"
+#include <limits.h>
+#include <stdio.h>
 
 /**
 *print_last_digit - Fuck Betty

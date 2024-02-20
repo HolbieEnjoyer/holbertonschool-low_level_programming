@@ -1,4 +1,5 @@
 #include "main.h"
+#include "limits.h"
 
 /**
 *print_last_digit - Fuck Betty
@@ -7,6 +8,12 @@
 */
 int print_last_digit(int n)
 {
+if (n == INT_MIN)
+{
+_putchar('0' + 8);
+return (8);
+}
+
 int abs;
 int d;
 

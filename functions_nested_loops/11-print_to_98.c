@@ -29,15 +29,15 @@ _putchar('0' + t % 10);
 */
 void print_to_98(int n)
 {
+int i;
+int inc;
+
 if (n == 98)
 {
 print_num(98);
 _putchar('\n');
 return;
 }
-
-int i;
-int inc;
 
 inc = sign(98 - n);
 for (i = n; i != 98; i += inc)

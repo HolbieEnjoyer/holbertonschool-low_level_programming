@@ -25,9 +25,14 @@ for (j = 0; j <= 9; j++)
 {
 for (i = 0; i <= 9; i++)
 {
-print_num(i * j);
+int num;
+
+num = i * j;
+print_num(num);
 _putchar(',');
 _putchar(' ');
+if (num < 10)
+	_putchar(' ');
 }
 _putchar('\n');
 }

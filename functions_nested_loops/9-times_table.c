@@ -36,7 +36,6 @@ _putchar(' ');
 if (num < 10)
 {
 _putchar(' ');
-_putchar(' ');
 }
 }
 }

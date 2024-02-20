@@ -6,10 +6,27 @@
 */
 void print_num(int t)
 {
-char first;
+int num;
+int dec;
 
-first = t < 10 ? '\0' : ('0' + t / 10);
-_putchar(first);
+if (t < 0)
+	_putchar('-');
+t = abs(t);
+
+num = t;
+dec = 1;
+
+while (num >= 10)
+{
+dec *= 10;
+num /= 10;
+}
+
+while (dec != 1)
+{
+_putchar('0' + (t / dec) % 10);
+dec /= 10;
+}
 _putchar('0' + t % 10);
 }
 

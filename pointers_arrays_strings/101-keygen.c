@@ -19,8 +19,11 @@ int main() {
     while (1) {
         int ch = rand_char();
         sum += ch;
-        if (sum > 2772) {
-            putchar(2772-sum);
+        if (sum > 2600) {
+	    putchar(ch);
+	    int leftover = 2772 - sum;
+	    putchar(leftover / 2);
+            putchar(leftover - leftover / 2);
             break;
         }
         putchar(ch);

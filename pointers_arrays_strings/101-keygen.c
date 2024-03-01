@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main()
+int main(void)
 {
 	int i;
 
@@ -13,4 +13,6 @@ int main()
 	{
 		printf("%c", 126);
 	}
+
+	return (0);
 }

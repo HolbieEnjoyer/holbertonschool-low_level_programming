@@ -9,6 +9,6 @@ int main()
 {
 	for (int i = 0; i < 22; i++)
 	{
-		putchar('~');
+		printf("%c", 126);
 	}
 }

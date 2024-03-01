@@ -7,7 +7,9 @@
  */
 int main()
 {
-	for (int i = 0; i < 22; i++)
+	int i;
+
+	for (i = 0; i < 22; i++)
 	{
 		printf("%c", 126);
 	}

@@ -21,9 +21,7 @@ int main() {
         sum += ch;
         if (sum > 2600) {
 	    putchar(ch);
-	    int leftover;
-
-	    leftover = 2772 - sum;
+	    int leftover = 2772 - sum;
 	    putchar(leftover / 2);
             putchar(leftover - leftover / 2);
             break;

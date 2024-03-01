@@ -13,7 +13,6 @@ int rand_char() {
     return 33 + rand() % (126-33);
 }
 
-// 2772
 int main() {
     
     int sum = 0;

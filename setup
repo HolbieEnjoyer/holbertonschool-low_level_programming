@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "No arguments provided!"
+	exit 1
+fi
+
+mkdir $1
+cd $1
+cp ../pointers_arrays_strings/README.md .
+cp ../pointers_arrays_strings/commit .
+mkdir ilahe
+cd ilahe
+git clone https://github.com/ilaahe04/holbertonschool-low_level_programming
+cd holbertonschool-low_level_programming
+cd $1
+find -type f ! -name "*.c" ! -name "*.h" -exec rm {} \;
+mv * ../../../
+cd ../../../
+rm -rf ilahe
+./commit

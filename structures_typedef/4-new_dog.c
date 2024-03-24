@@ -2,6 +2,22 @@
 #include "dog.h"
 #include <string.h>
 #include <stdio.h>
+
+/**
+ * _strlen - Entry point
+ *
+ * @s: variable
+ * Return: Always 0.
+ */
+int _strlen(char *s)
+{
+char *p = s;
+
+while (*p != '\0')
+	p++;
+return (p - s);
+}
+
 /**
   * new_dog- check the code.
   * @name: name of dog in struct
@@ -18,8 +34,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new_dog1 == NULL)
 		return (NULL);
 
-	name_l = strlen(name);
-	owner_l = strlen(owner);
+	name_l = _strlen(name);
+	owner_l = _strlen(owner);
 
 	new_dog1->name = malloc(name_l + 1);
 	if (new_dog1->name == NULL)

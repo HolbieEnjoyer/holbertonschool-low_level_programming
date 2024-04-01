@@ -4,18 +4,18 @@
 #include "lists.h"
 
 /**
- * _strlen - Entry point
+ * _strlen - Returns the length of a string
  *
- * @s: variable
+ * @s: The string to check
  * Return: Always 0.
  */
-int _strlen(const char *s)
-{
-	char *p = s;
-
-	while (*p != '\0')
-		p++;
-	return (p - s);
+int _strlen(const char *s) {
+    int i;
+    
+    while (s[i] != 0)
+        i++;
+    
+    return i;
 }
 
 /**

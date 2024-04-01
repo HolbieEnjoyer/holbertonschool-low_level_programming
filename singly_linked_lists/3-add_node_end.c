@@ -3,6 +3,21 @@
 #include <stdio.h>
 #include "lists.h"
 
+/**
+ * _strlen - Returns the length of a string.
+ * @s: The string to check.
+ * Return: Length of the string.
+ */
+int _strlen(const char *s)
+{
+	int i;
+
+	i = 0;
+	while (s[i] != 0)
+		i++;
+
+	return (i);
+}
 
 /**
  * add_node_end - check the code
@@ -21,7 +36,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 
 	new_n->str = strdup(str);
-	new_n->len = strlen(str);
+	new_n->len = _strlen(str);
 	new_n->next = NULL;
 
 	if (*head == NULL)
